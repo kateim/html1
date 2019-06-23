@@ -9,13 +9,59 @@
 <font face="trebuchet ms">
 
 <h1><center><font color="coral"><a href="index.html" target="_blank">HELLO WORLD</a></center></h1></font>
+
 <ol>
-<li><a href="1.html" target="_blank">TAG</a><br></li>
-<li><a href="2.html" target="_blank">ATTITUDE</a><br></li>
-<li><a href="3.html" target="_blank">FONT</a><br></li>
+<li><a href="1.html">Intro</a><br></li>
+<li><a href="2.html">Book</a><br></li>
+<li><a href="3.html">Music</a><br></li>
+<li><a href="4.html">Movie</a><br></li>
 </ol>
+
+<!-- Channel Plugin Scripts -->
+<script>
+  ;window.channelPluginSettings = {
+    "pluginKey": "577cb1aa-a870-4f18-82db-d58137d7502d"
+  };
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var d = window.document;
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+</script>
+<!-- End Channel Plugin -->
 <p>
-<font color="indianred"><h2><u>FONT</u></h2></font>
+<font color="indianred"><h4>Music</h4></font>
 <li><font face="sans-serif">
   This is <strong>sans-serif</strong><br>
 </font>

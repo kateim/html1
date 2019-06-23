@@ -11,15 +11,70 @@
 <h1><center><font color="coral"><a href="index.html" target="_blank">HELLO WORLD</a></center></h1></font>
 
 
+
 <ol>
-<li><a href="1.html" target="_blank">TAG</a><br></li>
-<li><a href="2.html" target="_blank">ATTITUDE</a><br></li>
-<li><a href="3.html" target="_blank">FONT</a><br></li>
+<li><a href="1.html">Intro</a><br></li>
+<li><a href="2.html">Book</a><br></li>
+<li><a href="3.html">Music</a><br></li>
+<li><a href="4.html">Movie</a><br></li>
 </ol>
+
+<!-- Channel Plugin Scripts -->
+<script>
+  ;window.channelPluginSettings = {
+    "pluginKey": "577cb1aa-a870-4f18-82db-d58137d7502d"
+  };
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var d = window.document;
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+</script>
+<!-- End Channel Plugin -->
 <p>
-  <p>
-  <font color="indianred"><h2><u>TAG</u></h2></font>
-  <li><strong>TAG is the most powerful grammar on web</strong><br>
-  <li>Tag tells information.</li>
-  </p>
+
+  <font color="indianred"><h4>SNS</h4></font>
+  <a href="https://www.facebook.com/profile.php?id=100001960290670&ref=bookmarks" target="_blank">Facebook</a><br>
+  <a href="https://www.instagram.com/eundkong/" target="_blank">instagram</a>
+</p>
+
+<p>
+
+  <font color="indianred"><h4>Career</h4></font>
+  - 2013.01~2013.06 대학내일 기획팀<br>
+  - 2014.10~2015.11 MBC 보도국 팩트체크팀 <br>
+  - 2016.12~2017.12 눔코리아 주식회사 브랜드마케팅팀<br>
+  - 2018.01~현재 조이코퍼레이션 운영팀<br>
+</p>
 </body>
